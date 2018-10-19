@@ -1,0 +1,16 @@
+<view wx:if="{{!loading}}">
+  <video wx:if="{{detail.is_play}}" src='{{"https://www.koocv.com/h5-view/v/movie/play?url="+detail.play_url}}'></video>
+  <view class="title overflow">
+    <view class="fl">{{detail.title}}</view>
+    <view class="fr num"><text>{{detail.ratings_count}}</text>人评分</view>
+  </view>
+  <view class="type">{{detail.genres+'/'+detail.year+'/'+detail.countries}}</view>
+  <view class="type overflow"  wx:if="{{detail.casts && detail.casts.length>0}}" wx:key='{{index}}'>
+    <view>领衔主演</view>
+    <view class="memberList fl" wx:for="{{detail.casts}}" data-alt='{{item.alt}}' bindtap='goRemuse'>
+      <image src='{{item.avatars.small}}'></image>
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+  <view class="summary">{{detail.summary}}</view>
+</view>

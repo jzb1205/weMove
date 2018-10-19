@@ -1,0 +1,25 @@
+page{
+  flex-direction: column;
+}
+.typeItem{
+  position:relative;
+  width:710rpx;
+  margin:20rpx 20rpx;
+  overflow: hidden;
+}
+.typeItem image{
+  width:100%;
+  border-radius:20rpx;
+  height:300rpx;
+  position:relative;
+  z-index: 99;
+}
+.typeItem text{
+  border-radius:10rpx;
+  position:absolute;
+  z-index:100;
+  left:20rpx;
+  bottom:20rpx;
+  color:#fff;
+  font:bold 14px/1.5 '微软雅黑';
+}

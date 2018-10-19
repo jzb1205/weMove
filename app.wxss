@@ -1,0 +1,10 @@
+/**app.wxss**/
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.overflow{
+  overflow: hidden;
+}

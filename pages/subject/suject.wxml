@@ -1,0 +1,4 @@
+<view wx:for="{{nameList}}" class="typeItem" wx:key="{{index}}" bindtap='toSubjectList' data-type="{{item}}">
+  <image src='{{typeList[index].img}}' lazy-load='true'></image>
+  <text>{{item}}</text>
+</view>
